@@ -1,0 +1,22 @@
+Task 1
+1.1.    SELECT * FROM mydb.categories;
+1.2.    SELECT name, phone FROM mydb.shippers
+-----------------------------------------------------------------------------------
+Task2
+2.1.    SELECT AVG(price) FROM mydb.products;
+2.2.    SELECT MAX(price) FROM mudb.products;
+2.3.    SELECT MIN(price) FROM mydb.sproducts
+-----------------------------------------------------------------------------------
+Task3
+3.1.    SELECT distinct category_id, price from mydb.products
+        order by price desc
+        limit 10
+-----------------------------------------------------------------------------------
+Task4
+4.1.    SELECT count(*) from mydb.products
+        where price > 20 and price < 100
+-----------------------------------------------------------------------------------
+Task5
+5.1.    SELECT supplier_id, COUNT(*) as product_count, AVG(price) as avg_price
+        FROM mydb.products
+        group by supplier_id;
